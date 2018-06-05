@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/SIPLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.siteurl.www.saifinance.activities.SIPList">
+
+    <include
+        android:id="@+id/sip_list_toolbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/noSip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:text="We haven't found any SIPs on your accont. We recommend you to start an SIP soon to secure your future"
+        android:textColor="@color/textColor"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/no_sip"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/noSip"
+        android:layout_below="@+id/noSip"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_signin_background"
+        android:letterSpacing="0.025"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:text="New Investment Request"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        android:textColor="@color/whiteColor"
+        android:textSize="14dp" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/sipLists"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sip_list_toolbar" />
+
+
+</RelativeLayout>

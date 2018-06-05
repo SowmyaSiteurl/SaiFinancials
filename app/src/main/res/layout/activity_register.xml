@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registerPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.siteurl.www.saifinance.activities.RegisterActivity">
+
+    <include layout="@layout/toolbar_register" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/rNameTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textColorHint="@color/textColor">
+
+                    <EditText
+                        android:id="@+id/rNameEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:backgroundTint="@color/textColor"
+                        android:hint="Name"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/textColor"
+                        android:textColorHighlight="@color/signInBackground"
+                        android:textColorHint="@color/signInBackground" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/rEmailTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textColorHint="@color/textColor">
+
+                    <EditText
+                        android:id="@+id/rEmailEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:backgroundTint="@color/textColor"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/textColor"
+                        android:textColorHighlight="@color/signInBackground"
+                        android:textColorHint="@color/signInBackground" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/rPhoneTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textColorHint="@color/textColor">
+
+                    <EditText
+                        android:id="@+id/rPhoneEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:backgroundTint="@color/textColor"
+                        android:hint="Mobile No."
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:textColor="@color/textColor"
+                        android:textColorHighlight="@color/signInBackground"
+                        android:textColorHint="@color/signInBackground" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/rPasswordTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:hint="Password"
+                    android:textColorHint="@color/textColor"
+                    app:passwordToggleEnabled="true">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/rPasswordEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:drawablePadding="10dp"
+                        android:gravity="top"
+                        android:inputType="textPassword"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"
+                        android:textColor="@color/textColor"
+                        android:textColorHint="@color/signInBackground"></android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/rPanTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/textColor">
+
+                    <EditText
+                        android:id="@+id/rPanEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:backgroundTint="@color/textColor"
+                        android:hint="PAN No."
+                        android:inputType="text"
+                        android:textColor="@color/textColor"
+                        android:textColorHighlight="@color/signInBackground"
+                        android:textColorHint="@color/signInBackground" />
+
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/rAadharTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textColorHint="@color/textColor">
+
+                    <EditText
+                        android:id="@+id/rAadharEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:backgroundTint="@color/textColor"
+                        android:hint="Aadhaar No."
+                        android:inputType="phone"
+                        android:maxLength="12"
+                        android:textColor="@color/textColor"
+                        android:textColorHighlight="@color/signInBackground"
+                        android:textColorHint="@color/signInBackground" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/calender_dob"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/calender" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/dateTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/textColor">
+
+                    <EditText
+                        android:id="@+id/dateEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/textColor"
+                        android:hint="Date of Birth"
+                        android:textColor="@color/textColor"
+                        android:textColorHighlight="@color/signInBackground"
+                        android:textColorHint="@color/signInBackground" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/calender_anniversary"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/calender" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/rAnniversaryTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/textColor">
+
+                    <EditText
+                        android:id="@+id/rAnniversaryEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/textColor"
+                        android:hint="Anniversary Date"
+                        android:textColor="@color/textColor"
+                        android:textColorHighlight="@color/signInBackground"
+                        android:textColorHint="@color/signInBackground" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_signin_background"
+                android:letterSpacing="0.025"
+                android:onClick="Register"
+                android:padding="10dp"
+                android:text="Register"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColor"
+                android:textSize="16dp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

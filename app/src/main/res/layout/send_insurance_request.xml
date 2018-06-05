@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/referAFriend"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Insurance Type here"
+                android:textColor="@color/textColor"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <RadioGroup
+                    android:id="@+id/insurance_types"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="1."
+                            android:textColor="@color/textColor"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <RadioButton
+                            android:id="@+id/health"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/health" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="2."
+                            android:textColor="@color/textColor"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <RadioButton
+                            android:id="@+id/life"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/life" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="3."
+                            android:textColor="@color/textColor"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <RadioButton
+                            android:id="@+id/general"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/general" />
+
+                    </RelativeLayout>
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/insuranceEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Message"
+                android:inputType="text"
+                android:letterSpacing="0.025"
+                android:text=""
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/signInBackground"
+                android:textSize="20sp"
+                app:met_baseColor="@color/textColor"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/signInBackground"
+                app:met_singleLineEllipsis="true" />
+
+
+            <Button
+                android:id="@+id/sendInsurance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_signin_background"
+                android:letterSpacing="0.025"
+                android:padding="10dp"
+                android:text="Send Request"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/whiteColor"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.siteurl.www.saifinance.activities.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/loginView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/loginToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"></android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginview">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <ImageView
+                    android:id="@+id/loginlogo"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/sai_logo" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/loginlogo"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/emailTextInputLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:textColorHint="@color/textColor">
+
+                            <EditText
+                                android:id="@+id/emailEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp"
+                                android:backgroundTint="@color/textColor"
+                                android:hint="Email"
+                                android:inputType="text"
+                                android:textColor="@color/textColor"
+                                android:textColorHighlight="@color/signInBackground"
+                                android:textColorHint="@color/signInBackground" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/passwordTextInputLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:hint="Password"
+                            android:textColorHint="@color/textColor"
+                            app:passwordToggleEnabled="true">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/passwordEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp"
+                                android:drawablePadding="10dp"
+                                android:gravity="top"
+                                android:inputType="textPassword"
+                                android:paddingTop="5dp"
+                                android:singleLine="true"
+                                android:textColor="@color/textColor"
+                                android:textColorHint="@color/signInBackground"></android.support.design.widget.TextInputEditText>
+
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/forgotPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:letterSpacing="0.025"
+                        android:text="Forgot ?"
+                        android:textColor="@color/textColor"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+
+                    <Button
+                        android:id="@+id/login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/button_signin_background"
+                        android:letterSpacing="0.025"
+                        android:onClick="Login"
+                        android:padding="10dp"
+                        android:text="Sign In"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="16dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/signin_background"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:letterSpacing="0.025"
+                            android:onClick="SignUpNow"
+                            android:text="New to SAI Financials ?"
+                            android:textColor="@color/textColor"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:letterSpacing="0.025"
+                            android:onClick="SignUpNow"
+                            android:text=" Sign up"
+                            android:textAllCaps="true"
+                            android:textColor="@color/textColor"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

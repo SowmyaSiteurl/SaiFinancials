@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/referAFriend"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/frndNmeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:digits="0123456789 abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:hint="Name"
+                android:inputType="text"
+                android:letterSpacing="0.025"
+                android:text=""
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/signInBackground"
+                android:textSize="20sp"
+                app:met_baseColor="@color/textColor"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/signInBackground"
+                app:met_singleLineEllipsis="true" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/frndEmailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtRegName"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:letterSpacing="0.025"
+                android:text=""
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/signInBackground"
+                android:textSize="20sp"
+                app:met_baseColor="@color/textColor"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/signInBackground"
+                app:met_singleLineEllipsis="true" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/frndPhneEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtRegEmail"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Mobile no."
+                android:inputType="phone"
+                android:letterSpacing="0.025"
+                android:maxLength="10"
+                android:text=""
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/signInBackground"
+                android:textSize="20sp"
+                app:met_baseColor="@color/textColor"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/signInBackground"
+                app:met_singleLineEllipsis="true" />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/frndMsgEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtRegPhone"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Message"
+                android:inputType="text"
+                android:letterSpacing="0.025"
+                android:text=""
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/signInBackground"
+                android:textSize="20sp"
+                app:met_baseColor="@color/textColor"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/signInBackground"
+                app:met_singleLineEllipsis="true" />
+
+
+            <Button
+                android:id="@+id/refFrnd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_signin_background"
+                android:letterSpacing="0.025"
+                android:padding="10dp"
+                android:text="Refer Friend/Family"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColor"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

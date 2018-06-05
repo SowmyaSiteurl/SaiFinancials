@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SAI Financials</string>
+
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="health">Health</string>
+    <string name="general">General</string>
+    <string name="life">Life</string>
+    <string name="oneTime">One Time</string>
+    <string name="sip">SIP</string>
+
+    <string name="noInternet">No Internet Connection.Make Sure Your Wi-Fi Or Mobile Data is Turned ON.</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+
+
+</resources>

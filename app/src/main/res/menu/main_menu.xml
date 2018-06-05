@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/update_profile"
+        android:icon="@drawable/ic_person_add_black_24dp"
+        android:title="Update Profile" />
+
+    <item
+        android:id="@+id/refer_friend"
+        android:icon="@drawable/ic_people_black_24dp"
+        android:title="Refer Friend/Family" />
+
+    <item
+        android:id="@+id/insurance_request"
+        android:icon="@drawable/ic_assignment_black_24dp"
+        android:title="New Insurance Request" />
+
+    <item
+        android:id="@+id/sip_request"
+        android:icon="@drawable/ic_dialer_sip_black_24dp"
+        android:title="New Investment Request" />
+
+    <item
+        android:id="@+id/insurance_list"
+        android:icon="@drawable/ic_assignment_black_24dp"
+        android:title="Your Policies" />
+
+    <item
+        android:id="@+id/sip_list"
+        android:icon="@drawable/ic_assignment_black_24dp"
+        android:title="Your SIP's" />
+
+    <item
+        android:id="@+id/query"
+        android:icon="@drawable/ic_contacts_black_24dp"
+        android:title="Contact Us" />
+
+    <item
+        android:id="@+id/rate_us"
+        android:icon="@drawable/ic_rate_review_black_24dp"
+        android:title="Rate Us" />
+
+
+    <item
+        android:id="@+id/change_password"
+        android:icon="@drawable/ic_build_black_24dp"
+        android:title="Change Password" />
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_power_settings_new_black_24dp"
+        android:title="Logout" />
+
+</menu>

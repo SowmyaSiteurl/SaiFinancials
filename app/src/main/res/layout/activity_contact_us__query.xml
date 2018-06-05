@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/faqLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.siteurl.www.saifinance.activities.contactUs_Query">
+
+    <include
+        android:id="@+id/query_toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/dynamic_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/query_toolbar"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:padding="8dip"
+            android:text="Select subject here"
+            android:textColor="@color/textColor"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <!-- Spinner Dropdown -->
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dip"
+            android:layout_marginRight="16dip"
+            android:layout_marginTop="10dip"
+            android:background="@android:drawable/btn_dropdown"
+            android:popupBackground="@color/whiteColor"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/faq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="12dp"
+            android:hint="Message"
+            android:inputType="text"
+            android:letterSpacing="0.025"
+            android:text=""
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/signInBackground"
+            android:textSize="18sp"
+            app:met_baseColor="@color/textColor"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/signInBackground"
+            app:met_singleLineEllipsis="true" />
+
+        <Button
+            android:id="@+id/sendFaq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/button_signin_background"
+            android:letterSpacing="0.025"
+            android:onClick="sendFaq"
+            android:padding="10dp"
+            android:text="Submit"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/whiteColor"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
